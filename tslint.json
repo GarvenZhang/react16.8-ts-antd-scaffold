@@ -1,0 +1,11 @@
+{
+  "extends": ["tslint-react-hooks"],
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": ["./config", "node_modules/**/*.ts"]
+  },
+  "interface-over-type-literal": true,
+  "rules": {
+    "react-hooks-nesting": "error"
+  }
+}

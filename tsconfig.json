@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    // "module": "commonjs",
+    // "target": "es5",
+    // "lib": ["es5", "es6", "dom", "es7", "es2017"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    // "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "typeRoots": ["./node_modules/@types/"],
+    "noUnusedLocals": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["esnext", "dom", "esnext.intl", "es2017.intl", "es2018.intl"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "build", "scripts", "webpack", "jest"]
+}

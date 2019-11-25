@@ -1,0 +1,242 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+input,
+select,
+button,
+textarea,
+p,
+th,
+td,
+aside,
+footer,
+header,
+.nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  -webkit-text-size-adjust: none;
+  font-family: 'Microsoft YaHei', '微软雅黑', 'MicrosoftJhengHei';
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*for chrome */
+
+body.noscroll {
+  overflow: hidden;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+em {
+  font-style: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none outside none;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font: 100% arial, helvetica, clean, sans-serif;
+  vertical-align: middle;
+}
+
+input[type='button'],
+input[type='submit'],
+button {
+  outline: none;
+  border: none;
+  border-radius: 0px;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+input,
+button,
+a {
+  outline: 0 none !important;
+  blr: expression(this.onFocus=this.blur());
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button::-moz-focus-inner {
+  border: none;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tove {
+  overflow: hidden;
+  zoom: 1;
+}
+
+//禁止换行 省略号溢出
+.textover {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+//清除浮动
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//箭头按钮
+.backicon {
+  font-family: '\5b8b\4f53';
+}
+
+//默认不选中
+.disabled {
+  position: relative;
+}
+
+.disabled:after {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.iconfont {
+  font-family: iconfont;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.none {
+  display: none;
+}
+
+.content-line {
+  height: 0.2rem;
+  background: #eeeeee;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.pcenter {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+img {
+  height: auto;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+not supported by any browser */
+}
