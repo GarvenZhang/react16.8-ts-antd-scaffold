@@ -85,46 +85,23 @@ npm run build [env]
 │   ├── mock  // mock数据
 │   │   └── index.ts
 │   ├── pages   // 页面
-│   │   ├── AlgorithmData   // 页面AlgorithmData
-│   │   │   ├── components  // 相关组件
-│   │   │   ├── fetch // 请求
-│   │   │   ├── index.scss
-│   │   │   ├── index.tsx
+│   │   ├── Demo  // 示例
+│   │   │   ├── components  // 页面组件
+│   │   │   ├── fetch // api层
+│   │   │   │   └── api.ts
+│   │   │   ├── index.scss  // 页面样式
+│   │   │   ├── index.tsx   // 页面入口
 │   │   │   ├── redux   // redux相关
-│   │   │   └── types.d.ts
-│   │   ├── AlgorithmService
-│   │   │   ├── components
-│   │   │   ├── fetch
-│   │   │   ├── index.scss
-│   │   │   ├── index.tsx
-│   │   │   ├── redux
-│   │   │   └── types.d.ts
-│   │   ├── Exception
+│   │   │   │   ├── actionTypes.ts
+│   │   │   │   ├── actions.ts
+│   │   │   │   ├── initialState.ts
+│   │   │   │   └── reducer.ts
+│   │   │   └── types.d.ts  // 局部ts声明文件
+│   │   ├── Exception   // 异常页面
 │   │   │   ├── 403.tsx
 │   │   │   ├── 404.tsx
 │   │   │   ├── 5xx.tsx
 │   │   │   └── Error.tsx
-│   │   ├── ParameterApplication
-│   │   │   ├── components
-│   │   │   ├── fetch
-│   │   │   ├── index.scss
-│   │   │   ├── index.tsx
-│   │   │   ├── redux
-│   │   │   └── types.d.ts
-│   │   ├── ParameterCombination
-│   │   │   ├── components
-│   │   │   ├── fetch
-│   │   │   ├── index.scss
-│   │   │   ├── index.tsx
-│   │   │   ├── redux
-│   │   │   └── types.d.ts
-│   │   ├── ParameterConfiguration
-│   │   │   ├── components
-│   │   │   ├── fetch
-│   │   │   ├── index.scss
-│   │   │   ├── index.tsx
-│   │   │   ├── redux
-│   │   │   └── types.d.ts
 │   │   └── StrategyItem
 │   │       ├── components
 │   │       ├── fetch
