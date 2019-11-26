@@ -21,7 +21,7 @@ declare interface DispatchParams<Type, Value> {
 
 declare interface PageConfig {
   pageSize: number | string;
-  pageNO: number | string;
+  pageNum: number | string;
 }
 
 declare type NoParamsNoReturnValueFn = () => void;

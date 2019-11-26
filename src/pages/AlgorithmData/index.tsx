@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {} from 'react';
+import { connect } from 'react-redux';
+import { AppState } from '@/stores/types';
 
 import './index.scss';
 
@@ -8,4 +10,4 @@ const AlgorithmData: React.FC<Props> = ({}) => {
   return <div className="">算法数据配置</div>;
 };
 
-export default AlgorithmData;
+export default connect(({}: AppState) => ({}), {})(AlgorithmData);

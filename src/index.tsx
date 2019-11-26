@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './stores';
 import { Main } from './layouts';
 
-import './assets/styles/reset.scss';
+import './assets/reset.scss';
 import 'antd/dist/antd.css';
 import './index.scss';
 

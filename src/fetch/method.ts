@@ -22,3 +22,14 @@ export const post = <B = object, T = any>(url: string, data: B, customConfig?: a
       .finally(() => requestEnd());
   });
 };
+
+export const del = <T = any>(url: string, customConfig?: any): Promise<CommonResponseData<T>> => {
+  return new Promise((resolve, reject) => {
+    requestStart();
+    axios
+      .delete<any, CommonResponseData<T>>(urlHandle(url), configHandle(customConfig))
+      .then((result: CommonResponseData<T>) => resolve(result))
+      .catch((err) => reject(err))
+      .finally(() => requestEnd());
+  });
+};
