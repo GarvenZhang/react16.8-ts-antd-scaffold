@@ -3,4 +3,10 @@
   .ant-layout-sider {
     background-color: #fff;
   }
+  .sidebar-wrap {
+    height: 100%;
+    .ant-menu {
+      height: 100%;
+    }
+  }
 }
