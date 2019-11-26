@@ -14,6 +14,7 @@ export const isPureObject = (target: any) => {
 
 export const isPlainObject = (obj: any) => {
   for (let key in obj) {
+    console.log(key);
     return false;
   }
   return true;
